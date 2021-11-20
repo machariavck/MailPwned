@@ -1,0 +1,21 @@
+type Query {
+    getbreaches: [Breaches: email]
+}
+
+type Breaches {
+    Name: String
+    Tile: String
+    Domain: String
+    BreachDate: date
+    AddedDate: datetime
+    ModifiedDate: datetime	
+    PwnCount: Int 
+    Description: String
+    DataClasses: String[]
+    IsVerified: Boolean
+    IsFabricated: Boolean
+    IsSensitive: Boolean
+    IsRetired: Boolean
+    IsSpamList: Boolean
+    LogoPath: String
+}
